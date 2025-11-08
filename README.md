@@ -1,4 +1,4 @@
-# Transmission_Lines
+# Geospatial Analysis of Transmission Infrastructure Risk under Land Deformation and Environmental Change
 Applied Geospatial Computation Lab Project
 
 ## 🎯 Big Picture: Why This Project Matters
