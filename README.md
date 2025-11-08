@@ -9,3 +9,11 @@ This project utilizes cutting-edge InSAR (Interferometric Synthetic Aperture Rad
 The ultimate goal is to produce actionable recommendations for transmission line planning, siting, and maintenance to support the Gulf Coast's growing energy needs and enhance the resilience of the energy grid against environmental hazards.
 
 
+## ⚙️ Project Workflow Overview
+The analysis is structured into a three-step pipeline:
+
+1. Data Acquisition: Automated search and download of OPERA Line-of-Sight (LOS) displacement data files.
+
+2. Data Pre-Processing: Conversion of raw LOS displacement to vertical displacement, masking, and re-projection to WGS84.
+
+3. Risk Classification & Analysis: Calculation of velocity, strain, and environmental risk factors, followed by comprehensive risk classification and mapping.
