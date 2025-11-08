@@ -17,3 +17,18 @@ The analysis is structured into a three-step pipeline:
 2. Data Pre-Processing: Conversion of raw LOS displacement to vertical displacement, masking, and re-projection to WGS84.
 
 3. Risk Classification & Analysis: Calculation of velocity, strain, and environmental risk factors, followed by comprehensive risk classification and mapping.
+
+
+## 🚀 Getting Started
+### 1. Environment Setup
+The required packages for this project can be installed using the provided environment.yml file.
+
+In your terminal:
+### Create the conda environment
+conda env create -f environment.yml
+### Activate the new environment
+conda activate transmission
+
+
+
+
