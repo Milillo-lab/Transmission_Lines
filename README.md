@@ -23,11 +23,10 @@ The analysis is structured into a three-step pipeline:
 ### 1. Environment Setup
 The required packages for this project can be installed using the provided environment.yml file.
 
-In your terminal:
-### Create the conda environment
-conda env create -f environment.yml
-### Activate the new environment
-conda activate transmission
+In terminal:
+
+conda env create -f environment.yml # Create the conda environment
+conda activate transmission # Activate the new environment
 
 
 
