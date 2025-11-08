@@ -25,8 +25,8 @@ The required packages for this project can be installed using the provided envir
 
 In terminal:
 
-conda env create -f environment.yml # Create the conda environment
-conda activate transmission # Activate the new environment
+conda env create -f environment.yml # Create the conda environment.
+conda activate transmission # Activate the new environment.
 
 
 
