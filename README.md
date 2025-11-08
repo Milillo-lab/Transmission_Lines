@@ -17,7 +17,7 @@ The analysis is structured into a three-step pipeline:
 | Step | Script | Function | Key Output |
 | :--- | :--- | :--- | :--- |
 | **1. Data Acquisition** | `download_opera_disp_data.py` | Connects to ASF DAAC, searches for OPERA InSAR displacement files for specified counties, and downloads the raw H5 files. | Raw OPERA H5 files |
-| **2. Data Pre-Processing** | `Opera-Vertical-Mask-Reproject-Processcer.py` | Converts LOS displacement to **vertical displacement** using incidence angles, applies masking, and reprojects data into dual-band GeoTIFFs (Vertical Displacement + Coherence). | Dual-band GeoTIFFs |
+| **2. Data Pre-Processing** | `Opera-Vertical-Mask-Reproject-Processcer.py` | Converts LOS displacement to **vertical displacement** using incidence angles, applies masking, and reprojects data into dual-band GeoTIFFs (Vertical Displacement + Coherence). | GeoTIFFs |
 | **3. Risk Classification** | `deform_risk_classi(whole).py` | Analyzes tower velocity and strain, integrates environmental factors (e.g., storm surge), classifies risk levels, runs PCA, and generates final maps/reports. | Risk Maps, Excel Report, Histograms |
 
 ---
