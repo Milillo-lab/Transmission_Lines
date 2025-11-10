@@ -3,6 +3,7 @@
 **Zih-Syun Chen<sup>1</sup>, Peng Zhang<sup>1</sup>, Pietro Milillo<sup>1,2</sup>**
 
 <sup>1</sup> Department of Civil and Environmental Engineering, University of Houston, Houston, TX, USA
+
 <sup>2</sup> Department of Earth and Atmospheric Science, University of Houston, Houston, TX, USA
 
 ## 🎯 Big Picture: Why This Project Matters
