@@ -9,9 +9,7 @@
   <sup>2</sup> Department of Civil and Environmental Engineering, University of Houston, Houston, TX, USA
 </p>
 
-
-
-
+---
 
 ## 🎯 Big Picture: Why This Project Matters
 
