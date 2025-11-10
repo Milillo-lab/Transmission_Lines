@@ -1,8 +1,9 @@
 # Geospatial Analysis of Transmission Infrastructure Risk under Land Deformation and Environmental Change ⚡️
 
-**Zixun Chen<sup>1</sup>**
+**Zixun Chen<sup>1</sup>, Pietro Milillo<sup>1,2</sup>**
 
-<sup>1</sup> Department of Civil and Environmental Engineering, University of Houston, Houston, TX, USA  
+<sup>1</sup> Department of Civil and Environmental Engineering, University of Houston, Houston, TX, USA
+<sup>2</sup> Department of Civil and Environmental Engineering, University of Houston, Houston, TX, USA  
 
 ## 🎯 Big Picture: Why This Project Matters
 
