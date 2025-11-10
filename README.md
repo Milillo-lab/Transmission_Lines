@@ -10,14 +10,8 @@
 </p>
 
 ---
-| Step | Script | Function | Key Output |
-| :--- | :--- | :--- | :--- |
-| **1. Data Acquisition** | `download_opera_disp_data.py` | Connects to ASF DAAC, searches for OPERA InSAR displacement files for specified counties, and downloads the raw H5 files. | Raw OPERA H5 files |
-| **2. Data Pre-Processing** | `Opera-Vertical-Mask-Reproject-Processcer.py` | Converts LOS displacement to **vertical displacement** using incidence angles, applies masking, and reprojects data into dual-band GeoTIFFs (Vertical Displacement + Coherence). | GeoTIFFs |
-| **3. Risk Classification** | `deform_risk_classi(whole).py` | Analyzes tower velocity and strain, integrates environmental factors (e.g., storm surge), classifies risk levels, runs PCA, and generates final maps/reports. | Risk Maps, Excel Report, Histograms |
 
-
-## 🎯 Big Picture: Why This Project Matters
+## 🎯 Overview
 
 The **Gulf Coast** is a critical hub for the United States' energy sector, facing increasing threats from climate change (e.g., severe storms, sea-level rise) and active geological processes (e.g., land subsidence). Maintaining the stability and resilience of its vast transmission line infrastructure is **important** for national energy security and the region's economy.
 
@@ -27,15 +21,18 @@ This project utilizes InSAR (Interferometric Synthetic Aperture Radar) data from
 
 ---
 
-## ⚙️ Project Workflow Overview
+## ⚙️ Workflow
 
-## ⭕️ As part of the dataset already been uploaded, you can just start from Risk Classification (deform_risk_classi(whole).py) after setting up the environment.yml.
+## 🚀 As part of the dataset already been uploaded, you can just start from Risk Classification (deform_risk_classi(whole).py) after setting up the environment.yml.
 
 The analysis is structured into a three-step pipeline:
+| Step | Script | Function | Key Output |
+| :--- | :--- | :--- | :--- |
+| **1. Data Acquisition** | `download_opera_disp_data.py` | Connects to ASF DAAC, searches for OPERA InSAR displacement files for specified counties, and downloads the raw H5 files. | Raw OPERA H5 files |
+| **2. Data Pre-Processing** | `Opera-Vertical-Mask-Reproject-Processcer.py` | Converts LOS displacement to **vertical displacement** using incidence angles, applies masking, and reprojects data into dual-band GeoTIFFs (Vertical Displacement + Coherence). | GeoTIFFs |
+| **3. Risk Classification** | `deform_risk_classi(whole).py` | Analyzes tower velocity and strain, integrates environmental factors (e.g., storm surge), classifies risk levels, runs PCA, and generates final maps/reports. | Risk Maps, Excel Report, Histograms |
 
 ---
-
-## 🚀 Getting Started
 
 ### 1. Environment Setup
 
