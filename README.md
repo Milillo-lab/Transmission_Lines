@@ -41,8 +41,6 @@ The analysis is structured into a three-step pipeline:
 
 The required packages for this project can be installed using the provided `environment.yml` file.
 
-#### In terminal:
-
 ```bash
 # 1. Create the conda environment
 conda env create -f environment.yml
