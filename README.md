@@ -1,4 +1,4 @@
-# Geospatial Analysis of Transmission Infrastructure Risk under Land Deformation and Environmental Change ⚡️
+<h1 align="center">Geospatial Analysis of Transmission Infrastructure Risk under Land Deformation and Environmental Change ⚡️</h1>
 
 <p align="center">
   <strong>Zih-Syun Chen<sup>1</sup>, Peng Zhang<sup>1</sup>, Pietro Milillo<sup>2</sup></strong>
