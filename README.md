@@ -1,5 +1,9 @@
 # Geospatial Analysis of Transmission Infrastructure Risk under Land Deformation and Environmental Change ⚡️
 
+**Zixun Chen<sup>1</sup>, Hyongki Lee<sup>1,2</sup>**
+
+<sup>1</sup> Department of Civil and Environmental Engineering, University of Houston, Houston, TX, USA  
+
 ## 🎯 Big Picture: Why This Project Matters
 
 The **Gulf Coast** is a critical hub for the United States' energy sector, facing increasing threats from climate change (e.g., severe storms, sea-level rise) and active geological processes (e.g., land subsidence). Maintaining the stability and resilience of its vast transmission line infrastructure is **important** for national energy security and the region's economy.
