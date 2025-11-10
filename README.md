@@ -51,7 +51,7 @@ conda activate transmission
 
 
 ### 2. Execution Steps 💻
-The analysis must be run sequentially. Below are the commands for execution in your terminal or command prompt, using placeholders (<...>) where you must provide your specific file paths.
+execution in your terminal or Jupyter notebook, using placeholders (<...>) where you must provide your specific file paths.
 
 #### Step 1: Download OPERA Displacement Data
 (Script: download_opera_disp_data.py)
