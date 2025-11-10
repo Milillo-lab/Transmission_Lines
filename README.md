@@ -19,7 +19,6 @@ This project utilizes InSAR (Interferometric Synthetic Aperture Radar) data from
 
 **The ultimate goal is to produce actionable recommendations for transmission line planning, siting, and maintenance to support the Gulf Coast's growing energy needs and enhance the resilience of the energy grid against environmental hazards.**
 
----
 
 ## ⚙️ Workflow
 
