@@ -1,6 +1,6 @@
 # Geospatial Analysis of Transmission Infrastructure Risk under Land Deformation and Environmental Change ⚡️
 
-**Zixun Chen<sup>1</sup>, Hyongki Lee<sup>1,2</sup>**
+**Zixun Chen<sup>1</sup>**
 
 <sup>1</sup> Department of Civil and Environmental Engineering, University of Houston, Houston, TX, USA  
 
