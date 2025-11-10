@@ -12,7 +12,7 @@ This project utilizes InSAR (Interferometric Synthetic Apertar Radar) data from 
 
 ## ⚙️ Project Workflow Overview
 
-## As part of the dataset already been uploaded, you can just start from Risk Classification (deform_risk_classi(whole).py).
+## As part of the dataset already been uploaded, you can just start from Risk Classification (deform_risk_classi(whole).py) after setting up the environment.yml.
 
 The analysis is structured into a three-step pipeline:
 
