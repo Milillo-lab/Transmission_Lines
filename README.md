@@ -139,11 +139,13 @@ The output has two primary GeoTIFF files - displacement-average.tif containing t
 
 **Section 2：How to run?**
 
-you can get the demo data for one county from [Opera-Processor-data-demo](https://uofh-my.sharepoint.com/:f:/r/personal/pzhang27_cougarnet_uh_edu/Documents/Opera-Processor-data-demo?csf=1&web=1&e=NvRfLW)
+You can access the demo data for one county from [Opera-Processor-data-demo](https://uofh-my.sharepoint.com/:f:/r/personal/pzhang27_cougarnet_uh_edu/Documents/Opera-Processor-data-demo?csf=1&web=1&e=NvRfLW). In general, processing data for a single county takes about 2–3 hours. However, due to the large size of the full dataset, it is not practical to upload all the data. Therefore, a smaller demo dataset is provided to demonstrate the functionality of the **Opera-Processor**.
 
 1. you need to make sure you have set up appropriate environment. 
 
-2. you need to change the directory of automated_comprehensive_processor.py
+2. you need to change the directory of **automated_comprehensive_processor.py**
+
+   When you access the demo data from [Opera-Processor-data-demo](https://uofh-my.sharepoint.com/:f:/r/personal/pzhang27_cougarnet_uh_edu/Documents/Opera-Processor-data-demo?csf=1&web=1&e=NvRfLW),  simply download all the files (including the five subfolders) to your local computer. After that, you only need to update the file paths in the scripts to match the locations of these five subfolders on your system.
 
    ```
        # Base path configuration
@@ -155,6 +157,8 @@ you can get the demo data for one county from [Opera-Processor-data-demo](https:
    ```
 
 3. command line
+
+   Note: Please you are in Opera-Processor now.
 
    ```
    cd Opera-Processor # note: cd is must
@@ -195,7 +199,7 @@ you can get the demo data for one county from [Opera-Processor-data-demo](https:
 
    4. Results
 
-      If you successfully run the code (the whole process will be like about 2 hours), in your processed_base directory, you will see four subfolders named 'Vertical-Mask-Reproject', 'Vertical-Time-Series-Towers', 'Vertical-Time-Series-Substations' and 'Average'.
+      If you successfully run the code (the whole process will be like about 20 minutes), in your processed_base directory, you will see four subfolders named 'Vertical-Mask-Reproject', 'Vertical-Time-Series-Towers', 'Vertical-Time-Series-Substations' and 'Average'.
 
 #### Step 3: Deformation Classification & Risk Analysis
 (Script: deform_risk_classi(whole).py)
