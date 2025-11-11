@@ -1,0 +1,31 @@
+# Python dependencies for InSAR OPERA Processing Scripts
+# Install with: pip install -r requirements.txt
+
+# Core scientific computing
+numpy>=1.20.0
+pandas>=1.3.0
+
+# Geospatial data processing
+geopandas>=0.10.0
+rasterio>=1.2.0
+shapely>=1.8.0
+fiona>=1.8.0
+pyproj>=3.0.0
+
+# HDF5 file handling
+h5py>=3.0.0
+
+# Numerical and scientific libraries
+scipy>=1.7.0
+matplotlib>=3.3.0
+
+# Excel file handling
+openpyxl>=3.0.0
+
+# Progress bars
+tqdm>=4.60.0
+
+# Note: GDAL is a dependency of rasterio and geopandas
+# If you encounter installation issues, you may need to install GDAL separately
+# For Windows users, consider using conda or pre-built wheels from:
+# https://www.lfd.uci.edu/~gohlke/pythonlibs/
