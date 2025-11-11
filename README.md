@@ -57,8 +57,25 @@ conda env create -f environment.yml
 conda activate transmission
 ```
 
+If you can not set up conda environment, you can install dependencies only for Step 2  using Opera-Processor/requirements.txt
+
+```
+# 1. create the virtual environment
+python -m venv your-environment
+
+# 2. Activate 
+myenv\Scripts\activate (Windows)
+source myenv/bin/activate (Linux / macOS)
+
+# 3. install 
+cd Opera-Processor
+pip install -r requirements.txt
+```
+
+
 
 ### 2. Execution Steps 💻
+
 execution in your terminal or Jupyter notebook, using placeholders (<...>) where you must provide your specific file paths.
 
 #### Step 1: Download OPERA Displacement Data
