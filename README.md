@@ -158,7 +158,7 @@ You can access the demo data for one county from [Opera-Processor-data-demo](htt
 
 3. command line
 
-   Note: Please you are in Opera-Processor now.
+   Note: Please ensure you are in Opera-Processor now.
 
    ```
    cd Opera-Processor # note: cd is must
