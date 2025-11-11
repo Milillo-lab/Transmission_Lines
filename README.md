@@ -73,7 +73,7 @@ The content is divided into two sections. Section 1 presents a detailed explanat
 
   We use the **Opera-Processor** package to process the OPERA data. It contains five Python scripts and a *requirements.txt* file.
 
-  1. **automated_comprehensive_processor.py**
+1. **automated_comprehensive_processor.py**
 
 This script provides a comprehensive 4-step data processing pipeline capable of automatically processing multiple counties
 
