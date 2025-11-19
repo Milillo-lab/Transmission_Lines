@@ -45,7 +45,7 @@ The analysis is structured into a three-step pipeline:
 
 ---
 
-### 1. Environment Setup
+### A. Environment Setup
 
 The required packages for this project can be installed using the provided `environment.yml` file.
 
@@ -74,7 +74,7 @@ pip install -r requirements.txt
 
 
 
-### 2. Execution Steps 💻
+### B. Execution Steps 💻
 
 execution in your terminal or Jupyter notebook, using placeholders (<...>) where you must provide your specific file paths.
 
@@ -91,11 +91,11 @@ python download_opera_disp_data.py
 
 The content is divided into two sections. Section 1 presents a detailed explanation of the scripts, and Section 2 describes the execution process and usage instructions.
 
-#### Section1: scripts description
+#### 2.1: scripts description
 
 We use the **Opera-Processor** package to process the OPERA data. It contains five Python scripts and a *requirements.txt* file.
 
-1. **automated_comprehensive_processor.py**
+2.1.1 **automated_comprehensive_processor.py**
 
 This script provides a comprehensive 4-step data processing pipeline capable of automatically processing multiple counties
 
@@ -107,7 +107,7 @@ This script provides a comprehensive 4-step data processing pipeline capable of 
 
 (4)**Displacement-Coherence Average** - Cross-frame averaging of displacement and coherence
 
-2. **Opera-Vertical-Mask-Reproject-Processcer.py**
+2.1.2 **Opera-Vertical-Mask-Reproject-Processcer.py**
 
 The **Opera-Vertical-Mask-Reproject-Processcer** is a processing tool designed to convert raw OPERA InSAR H5 files into standardized GeoTIFF format for subsequent analysis. 
 
@@ -115,7 +115,7 @@ This processor reads displacement and temporal coherence data from OPERA HDF5 fi
 
 The output consists of dual-band GeoTIFF files with standardized naming format `OPERA_{DISPLACEMENT_TYPE}_COHERENCE_{MASK}_REPROJECTED_{FRAME}_{START_DATE}_{END_DATE}.tif` where each file contains Band 1 (displacement data in millimeters) and Band 2 (temporal coherence values 0.0-1.0), along with comprehensive processing logs and quality statistics. 
 
-3. **Opera-TimeSeries-Tower-Processor.py**
+2.1.3 **Opera-TimeSeries-Tower-Processor.py**
 
 The **Opera-TimeSeries-Tower-Processor** is a tool designed to extract and analyze time series data from OPERA GeoTIFF files specifically for power tower infrastructure monitoring. 
 
@@ -145,7 +145,7 @@ Note: You will see 9-pixel number of each`tower_{tower_id}_9pixel_displacement_c
 - Pixel 8: Lower-center (directly south)
 - Pixel 9: Lower-right corner (southeast)
 
-4. **Opera-TimeSeries-Substation-Processor.py**
+2.1.4 **Opera-TimeSeries-Substation-Processor.py**
 
 The **Opera-TimeSeries-Substation-Processor** is tool designed specifically for extracting and analyzing time series data from OPERA GeoTIFF files at electrical substation locations. 
 
@@ -153,19 +153,19 @@ This processor combines intersected pixel analysis (capturing pixels directly at
 
 The output includes individual Excel files named `substation_{substation_id}_displacement_coherence.xlsx` containing time series data with displacement measurements, temporal coherence values, coordinate information, and multi-pixel spatial analysis results for each substation, plus a master summary file `substation_displacement_coherence_summary.csv` that aggregates data from all substations with statistical analysis including mean displacement, standard deviation, data quality metrics, and temporal trends.
 
-5. **Opera-Displacement-Coherence-Average.py** 
+2.1.5 **Opera-Displacement-Coherence-Average.py** 
 
 This script is a tool designed to compute spatial averages of displacement and temporal coherence values from OPERA InSAR dual-band GeoTIFF files across multiple time frames, processing large raster datasets in memory-efficient chunks using windowed operations to generate county-wide averaged products that represent the mean surface deformation and measurement quality over time.
 
 The output has two primary GeoTIFF files - displacement-average.tif containing the averaged vertical displacement measurements in millimeters and coherence-average.tif containing the corresponding averaged temporal coherence values ranging from 0.0 to 1.0, where the averaging process incorporates data from all available frames within the specified time range (2019 to 2023) while respecting county boundaries through shapefile-based clipping.
 
-#### **Section 2：How to run?**
+#### **2.2：How to run?**
 
 You can access the demo data for one county from [Opera-Processor-data-demo](https://uofh-my.sharepoint.com/:f:/r/personal/pzhang27_cougarnet_uh_edu/Documents/Opera-Processor-data-demo?csf=1&web=1&e=NvRfLW). In general, processing data for a single county takes about 2–3 hours. However, due to the large size of the full dataset, it is not practical to upload all the data. Therefore, a smaller demo dataset is provided to demonstrate the functionality of the **Opera-Processor**.
 
-1. you need to make sure you have set up appropriate environment. 
+2.2.1 you need to make sure you have set up appropriate environment. 
 
-2. you need to change the directory of **automated_comprehensive_processor.py**
+2.2.2 you need to change the directory of **automated_comprehensive_processor.py**
 
    When you access the demo data from [Opera-Processor-data-demo](https://uofh-my.sharepoint.com/:f:/r/personal/pzhang27_cougarnet_uh_edu/Documents/Opera-Processor-data-demo?csf=1&web=1&e=NvRfLW),  simply download all the files (including the five subfolders) to your local computer. After that, you only need to update the file paths in the scripts to match the locations of these five subfolders on your system.
 
@@ -178,7 +178,7 @@ You can access the demo data for one county from [Opera-Processor-data-demo](htt
        substation_shapefile_base = '/substation_every_county' # the directory of county electrical substations
    ```
 
-3. command line
+2.2.3 command line
 
    Note: Please ensure you are in Opera-Processor now.
 
@@ -220,7 +220,7 @@ You can access the demo data for one county from [Opera-Processor-data-demo](htt
    ```
 
 
-4. Results
+2.2.4 Results
 
 If you successfully run the code (the whole process will be like about 20 minutes), in your processed_base directory, you will see four subfolders named 'Vertical-Mask-Reproject', 'Vertical-Time-Series-Towers', 'Vertical-Time-Series-Substations' and 'Average'.
 
