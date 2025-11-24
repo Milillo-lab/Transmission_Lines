@@ -16,6 +16,7 @@ The **Gulf Coast** is a critical hub for the United States' energy sector. Maint
 
 The ultimate goal is to produce actionable recommendations for transmission line planning, siting, and maintenance to support the Gulf Coast's growing energy needs and enhance the resilience of the energy grid against environmental hazards.
 
+---
 
 ## Overview
 
