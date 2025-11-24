@@ -214,12 +214,12 @@ If you successfully run the code (the whole process will be like about 20 minute
 
 ⚠️: TWo large data files are stored using Git LFS (Large File Storage) and appear as small placeholder files in the repository. Please download these files manually and place the downloaded file in the `data/` directory before running the analysis.
 1. **PowerTower_WGS84_numbers.zip**
-2. **vertical_disp_nomask_demo.zip**
+2. **Vertical-Time-Series-Towers.zip**
    
 ```bash
    cd ../data
    unzip PowerTower_WGS84_numbers.zip
-   unzip vertical_disp_nomask_demo.zip
+   unzip Vertical-Time-Series-Towers.zip
 ```
 
 Run the script from the terminal:
