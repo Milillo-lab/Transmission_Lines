@@ -215,7 +215,7 @@ If you successfully run the code (the whole process will be like about 20 minute
 Please first extract the data before running the code.
 
 ```bash
-   cd data/TransmissionLines_DALYMarg
+   cd ../data
    unzip PowerTower_WGS84_numbers.zip
 ```
 
