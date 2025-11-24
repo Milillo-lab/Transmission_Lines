@@ -41,7 +41,7 @@ The analysis is structured into a three-step pipeline:
 ---
 
 
-### A. Installation
+## A. Installation
 
 1. Clone the repository:
 ```bash
@@ -54,12 +54,12 @@ The analysis is structured into a three-step pipeline:
    conda env create -f environment.yml
    conda activate transmission
 ```
+---
 
 
+## B. Conduct the Work
 
-### B. Conduct the Work
-
-#### 1. Download Data (opera displacement data)
+### 1. Download Data (opera displacement data)
 
 Requires Earthdata Login credentials. People must first create an Earthdata account, and then use the account and password to log in.
 
@@ -68,7 +68,7 @@ python download_opera_disp_data.py
 ```
 Execution in your terminal or Jupyter notebook, using placeholders (<...>) where you must provide your specific file paths.
 
-#### 2. Opera Data Process
+### 2. Opera Data Process
 
 The content is divided into two sections. Section 1 presents a detailed explanation of the scripts, and Section 2 describes the execution process and usage instructions.
 
@@ -205,7 +205,7 @@ You can access the demo data for one county from [Opera-Processor-data-demo](htt
 
 If you successfully run the code (the whole process will be like about 20 minutes), in your processed_base directory, you will see four subfolders named 'Vertical-Mask-Reproject', 'Vertical-Time-Series-Towers', 'Vertical-Time-Series-Substations' and 'Average'.
 
-#### 3. Risk Classification
+### 3. Risk Classification
 (Script: deform_risk_classi(whole).py)
 
 This script performs the core spatio-temporal analysis and requires path modifications within the script itself before execution.
