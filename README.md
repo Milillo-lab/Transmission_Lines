@@ -56,7 +56,7 @@ In Step 2,  the input for this step consists of the output generated in Step 1, 
 
 ## Run the code
 
-### 1. Download Data (People must first create an Earthdata account)
+### 1. Download Data (An Earthdata account is required)
 
 Downloading the data will take some time. It requires Earthdata's account and password for credentials(https://urs.earthdata.nasa.gov/).
 
