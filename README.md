@@ -246,7 +246,7 @@ if __name__ == "__main__":
 Once the paths are updated, run the script from your terminal:
 
 ```Bash
-python deform_risk_classi(whole).py
+python deform_risk_classi.py
 ```
 
 
