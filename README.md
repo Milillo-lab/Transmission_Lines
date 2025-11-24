@@ -63,6 +63,7 @@ Downloading the data will take some time. It requires Earthdata's account and pa
 Run this code in your terminal.
 
 ```Bash
+cd code
 python download_opera_disp_data.py
 ```
 
