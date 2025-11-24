@@ -12,9 +12,9 @@
 
 ## 🎯 Introduction
 
-The **Gulf Coast** is a critical hub for the United States' energy sector, facing increasing threats from climate change (e.g., severe storms, sea-level rise) and active geological processes (e.g., land subsidence). Maintaining the stability and resilience of its vast transmission line infrastructure is **important** for national energy security and the region's economy.
+The **Gulf Coast** is a critical hub for the United States' energy sector, facing increasing threats from climate change (e.g., severe storms, sea-level rise) and active geological processes (e.g., land subsidence). Maintaining the stability and resilience of the transmission line is **important** for energy security and the economy.
 
-This project utilizes InSAR (Interferometric Synthetic Aperture Radar) data from the NASA/JPL **OPERA** mission to systematically assess and classify the deformation risk of transmission towers across the Gulf Coast.
+This project utilizes **OPERA DISP Sentinel-1 products** from the NASA/JPL to systematically assess and classify the deformation risk of power towers across the Gulf Coast.
 
 **The ultimate goal is to produce actionable recommendations for transmission line planning, siting, and maintenance to support the Gulf Coast's growing energy needs and enhance the resilience of the energy grid against environmental hazards.**
 
