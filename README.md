@@ -21,7 +21,7 @@ This project utilizes **OPERA DISP Sentinel-1 products** from the NASA/JPL to sy
 
 ## Overview
 
-The full dataset is quite large, and the entire process (from the first to the last step) may take hours. Therefore, we directly provide the input files for each step. You can run the final **Risk Classification** directly for quick review after setting up the environment.yml.
+The full dataset is quite large, and the entire process (from the first to the last step) may take hours. Therefore, we directly provide the input files for each step. You can run the final **3. Risk Classification** directly for quick review after setting up the environment.yml.
 
 
 In Step 2,  the input for this step consists of the output generated in Step 1, as well as additional files including the geographic boundaries of 50 counties, and shapefiles for transmission towers and substations. You do not necessarily need to use the results from Step 1 — you can directly use the data ( [Opera-Processor-data-demo](https://uofh-my.sharepoint.com/:f:/r/personal/pzhang27_cougarnet_uh_edu/Documents/Opera-Processor-data-demo?csf=1&web=1&e=NvRfLW)) we provide to verify this step. However, since the Step 2 dataset contains some information that we prefer not to release publicly at this time, please send a request to **pzhang27@cougarnet.uh.edu** if you would like to access the demo data.
