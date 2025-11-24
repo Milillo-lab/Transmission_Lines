@@ -230,7 +230,34 @@ python deform_risk_classi.py
 ```
 
 
+## Project Structure
 
+```
+Transmission_Lines/
+├── code/                            # Analysis scripts
+│   ├── download_opera_disp_data.py  # Download OPERA DISP data 
+│   ├── deform_risk_classi.py        # Risk level classification
+├── data/                            # Input data
+│   ├── counties_shapefile/          # Study area boundaries
+│   ├── opera_displacement_data/     # InSAR displacement time series
+│   └── PowerTower_WGS84_numbers/    # Tower locations
+├── dataset/                         # Large environmental datasets (need manually download to local folder)
+│   └── TransmissionLines_DALYMarg/
+│       ├── NOAASLR/                 # Sea level rise data
+│       └── NWS_StormSturge/         # Storm surge inundation data
+├── results/                         # Analysis outputs (auto-created)
+├── Opera-Processor/                 # Data processing scripts
+├── environment.yml                  # Conda environment specification
+└── README.md                        # This file
+```
+
+
+## Contact
+
+**Zih-Syun Chen**
+
+- GitHub: @zixunn
+- Gmail: emily30823@gmail.com
 
 ---
 
