@@ -59,14 +59,14 @@ The analysis is structured into a three-step pipeline:
 
 ## Run the code
 
-### 1. Download Data (opera displacement data)
+### 1. Download Data (People must first create an Earthdata account, and then use the account and password to log in.)
 
-Requires Earthdata Login credentials. People must first create an Earthdata account, and then use the account and password to log in.
+Run this code in your terminal. It requires Earthdata Login credentials.
 
 ```Bash
 python download_opera_disp_data.py
 ```
-Execution in your terminal or Jupyter notebook, using placeholders (<...>) where you must provide your specific file paths.
+
 
 ### 2. Opera Data Process
 
