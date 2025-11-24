@@ -240,11 +240,11 @@ Transmission_Lines/
 ├── data/                            # Input data
 │   ├── counties_shapefile/          # Study area boundaries
 │   ├── opera_displacement_data/     # InSAR displacement time series
-│   └── PowerTower_WGS84_numbers/    # Tower locations
-├── dataset/                         # Large environmental datasets (need manually download to local folder)
-│   └── TransmissionLines_DALYMarg/
-│       ├── NOAASLR/                 # Sea level rise data
+│   ├── TransmissionLines_DALYMarg/
+│       ├── NOAASLR/                 # Sea level rise data 
 │       └── NWS_StormSturge/         # Storm surge inundation data
+│   └── vertical_disp_nomask_demo    # Well processed vertical displacement data  # Git LFS Dataset (need manually download to local folder)
+│   └── PowerTower_WGS84_numbers/    # Tower locations # Git LFS Dataset (need manually download to local folder)
 ├── results/                         # Analysis outputs (auto-created)
 ├── Opera-Processor/                 # Data processing scripts
 ├── environment.yml                  # Conda environment specification
