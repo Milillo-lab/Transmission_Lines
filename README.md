@@ -45,31 +45,19 @@ The analysis is structured into a three-step pipeline:
 
 ---
 
-### A. Environment Setup
 
-The required packages for this project can be installed using the provided `environment.yml` file.
+### A. Installation
 
+1. Clone the repository:
 ```bash
-# 1. Create the conda environment
-conda env create -f environment.yml
-
-# 2. Activate the new environment
-conda activate transmission
+   git clone https://github.com/Milillo-lab/Transmission_Lines.git
+   cd Transmission_Lines
 ```
 
-If you can not set up conda environment, you can install dependencies only for Step 2  using Opera-Processor/requirements.txt
-
-```
-# 1. create the virtual environment
-python -m venv your-environment
-
-# 2. Activate 
-myenv\Scripts\activate (Windows)
-source myenv/bin/activate (Linux / macOS)
-
-# 3. install 
-cd Opera-Processor
-pip install -r requirements.txt
+2. Create and activate the conda environment:
+```bash
+   conda env create -f environment.yml
+   conda activate transmission
 ```
 
 
