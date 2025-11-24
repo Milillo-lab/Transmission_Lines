@@ -10,7 +10,7 @@
 
 ---
 
-## 🎯 Introduction
+## Introduction
 
 The **Gulf Coast** is a critical hub for the United States' energy sector, facing increasing threats from climate change (e.g., severe storms, sea-level rise) and active geological processes (e.g., land subsidence). Maintaining the stability and resilience of the transmission line is **important** for energy security and the economy.
 
@@ -19,7 +19,7 @@ This project utilizes **OPERA DISP Sentinel-1 products** from the NASA/JPL to sy
 **The ultimate goal is to produce actionable recommendations for transmission line planning, siting, and maintenance to support the Gulf Coast's growing energy needs and enhance the resilience of the energy grid against environmental hazards.**
 
 
-## ⚙️ Overview
+## Overview
 
 The full dataset is quite large, and the entire process (from the first to the last step) may take hours. Therefore, we directly provide the input files for each step. You can run the final **Risk Classification** directly for quick review after setting up the environment.yml.
 
