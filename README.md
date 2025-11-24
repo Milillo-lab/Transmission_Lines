@@ -33,16 +33,9 @@ The input for Step 3 requires the results from Step 2, which can be directly acc
 
 The analysis is structured into a three-step pipeline:
 
-| Step                       | Script                                                       | Function                                                     | Key Output                                                   |
-| -------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| **1. Data Acquisition**    | `download_opera_disp_data.py`                                | Connects to ASF DAAC, searches for OPERA InSAR displacement files for specified counties, and downloads the raw H5 files. | Raw OPERA H5 files                                           |
-| **2. Opera data Process**  | `Opera-Processor/automated_comprehensive_processor.py`       | provides the following 4-step data processing pipeline capable of automatically processing multiple counties. | all the results from the following 4 scripts                 |
-|                            | `Opera-Processor/Opera-Vertical-Mask-Reproject-Processcer.py` | convert raw OPERA InSAR H5 files into standardized GeoTIFF format (including vertical land motion and coherence) | each GeoTIFF contains Band 1 (displacement) and Band 2 (temporal coherence) |
-|                            | `Opera-Processor/Opera-TimeSeries-Tower-Processor.py`        | extracts displacement and coherence values from a 9-pixel area surrounding each tower center (3x3 pixel window) | CSV filescontaining time series data with columns for dates, displacement values, coherence measurements, and coordinate information for each of the 9 pixels |
-|                            | `Opera-Processor/Opera-TimeSeries-Substation-Processor.py`   | combines intersected pixel analysis with outer-ring pixel sampling  to provide substation displacement and coherence | Excel includes individual Excel files containing time series data with displacement measurements, temporal coherence values |
-|                            | `Opera-Processor/Opera-Displacement-Coherence-Average.py`    | generate county-wide averaged products that represent the mean surface deformation and coherence | displacement-average.tif  and coherence-average.tif          |
-| **3. Risk Classification** | `deform_risk_classi(whole).py`                               | Analyzes tower velocity and strain, integrates environmental factors (e.g., storm surge), classifies risk levels, runs PCA, and generates final maps/reports. | Risk Maps, Excel Report, Histograms                          |
-
+**1. Data Acquisition**
+**2. Opera data Process**
+**3. Risk Classification**
 ---
 
 
@@ -251,3 +244,19 @@ Once the paths are updated, run the script from your terminal:
 ```Bash
 python deform_risk_classi(whole).py
 ```
+
+
+
+
+
+
+
+| Step                       | Script                                                       | Function                                                     | Key Output                                                   |
+| -------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| **1. Data Acquisition**    | `download_opera_disp_data.py`                                | Connects to ASF DAAC, searches for OPERA InSAR displacement files for specified counties, and downloads the raw H5 files. | Raw OPERA H5 files                                           |
+| **2. Opera data Process**  | `Opera-Processor/automated_comprehensive_processor.py`       | provides the following 4-step data processing pipeline capable of automatically processing multiple counties. | all the results from the following 4 scripts                 |
+|                            | `Opera-Processor/Opera-Vertical-Mask-Reproject-Processcer.py` | convert raw OPERA InSAR H5 files into standardized GeoTIFF format (including vertical land motion and coherence) | each GeoTIFF contains Band 1 (displacement) and Band 2 (temporal coherence) |
+|                            | `Opera-Processor/Opera-TimeSeries-Tower-Processor.py`        | extracts displacement and coherence values from a 9-pixel area surrounding each tower center (3x3 pixel window) | CSV filescontaining time series data with columns for dates, displacement values, coherence measurements, and coordinate information for each of the 9 pixels |
+|                            | `Opera-Processor/Opera-TimeSeries-Substation-Processor.py`   | combines intersected pixel analysis with outer-ring pixel sampling  to provide substation displacement and coherence | Excel includes individual Excel files containing time series data with displacement measurements, temporal coherence values |
+|                            | `Opera-Processor/Opera-Displacement-Coherence-Average.py`    | generate county-wide averaged products that represent the mean surface deformation and coherence | displacement-average.tif  and coherence-average.tif          |
+| **3. Risk Classification** | `deform_risk_classi(whole).py`                               | Analyzes tower velocity and strain, integrates environmental factors (e.g., storm surge), classifies risk levels, runs PCA, and generates final maps/reports. | Risk Maps, Excel Report, Histograms                          |
