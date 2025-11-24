@@ -28,7 +28,7 @@ In Step 2,  the input for this step consists of the output generated in Step 1, 
 
 
 
-The analysis is structured into a three-step pipeline:
+The full pipeline includes three steps:
 
 1. Download Data
 
