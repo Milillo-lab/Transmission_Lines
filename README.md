@@ -212,7 +212,7 @@ If you successfully run the code (the whole process will be like about 20 minute
 
 ### 3. Risk Classification (core analysis)
 
-⚠️: TWo large data files are stored using Git LFS (Large File Storage) and appear as small placeholder files in the repository. Please download these files manually and place the downloaded file in the `data/` directory before running the analysis.
+⚠️: Two large data files are stored using Git LFS (Large File Storage) and appear as small placeholder files in the repository. Please download these files manually and place the downloaded file in the `data/` directory before running the analysis.
 1. **PowerTower_WGS84_numbers.zip**
 2. **Vertical-Time-Series-Towers.zip**
    
