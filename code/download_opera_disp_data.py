@@ -119,25 +119,21 @@ class OPERADownloader:
         self.raw_files_dir.mkdir(parents=True, exist_ok=True)
         self.metadata_dir.mkdir(parents=True, exist_ok=True)
         
-    def search_granules(self, start_date, end_date):
+    def make_granule_list(self,start_date, end_date,flight_direction):
         """Search for OPERA granules"""
-        
         cmr_url = "https://cmr.earthdata.nasa.gov/search/granules.json"
-        
         params = {
             'collection_concept_id': 'C3294057315-ASF',
             'bounding_box': f"{self.bbox[0]},{self.bbox[1]},{self.bbox[2]},{self.bbox[3]}",
             'temporal': f"{start_date}T00:00:00Z,{end_date}T23:59:59Z",
             'page_size': 2000,
-            'sort_key': 'start_date'
+            'sort_key': 'start_date',
+            'attribute[]': f'string,ASCENDING_DESCENDING,{flight_direction}'
         }
-        
         response = requests.get(cmr_url, params=params, timeout=60)
         response.raise_for_status()
-        
         data = response.json()
         granules = data['feed']['entry']
-        
         granule_list = []
         for granule in granules:
             granule_info = {
@@ -156,6 +152,28 @@ class OPERADownloader:
                         granule_info['download_urls'].append(link['href'])
             
             granule_list.append(granule_info)
+        return granule_list
+    
+    def search_granules(self, start_date, end_date , flight_direction = 'ASC/DSC'):
+        """ Chose the proper flight direction, then Search for OPERA granules """
+        if flight_direction == 'ASC/DSC':
+            flight_direction = 'ASCENDING'
+            granule_list = self.make_granule_list(start_date, end_date , flight_direction)
+            granule_df = pd.DataFrame(granule_list)
+            pattern = r'IW_(.*?)_VV'
+            granule_df['frame'] =  granule_df['title'].str.extract(pattern, expand=False)
+            len_ASC = len(granule_df) / len(granule_df['frame'].unique()) / len(granule_df['frame'].unique()) #gives priority to the direction with higher temporal and lower spatial frames
+            
+            flight_direction = 'DESCENDING'
+            granule_list = self.make_granule_list(start_date, end_date , flight_direction)
+            granule_df = pd.DataFrame(granule_list)
+            pattern = r'IW_(.*?)_VV'
+            granule_df['frame'] =  granule_df['title'].str.extract(pattern, expand=False)
+            len_DSC = len(granule_df) / len(granule_df['frame'].unique()) / len(granule_df['frame'].unique()) #gives priority to the direction with higher temporal and lower spatial frames
+            
+            if len_ASC> len_DSC:
+                flight_direction = 'ASCENDING'
+        granule_list = self.make_granule_list(start_date, end_date , flight_direction)
         
         return granule_list
     
